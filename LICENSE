@@ -1,3 +1,14 @@
+# Billboard Hot 100 Web Scraper
+
+## Credits
+This project is based on [billboard-hot-100-web-scraper](https://github.com/jsubroto/billboard-hot-100-web-scraper) by Jaimes Subroto.
+
+Original work: Copyright (c) 2018 Jaimes Subroto
+Modified work: Copyright (c) 2025 RihitotheBurrito
+
+## License
+MIT License - see [LICENSE](LICENSE) for details.
+
 MIT License
 
 Copyright (c) 2018 Jaimes Subroto
@@ -19,3 +30,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+# Changes from Original
+
+## Added Features
+- 日本版Billboard Hot 100対応
+- データフォルダの整理
+- HTMLビューアーの改善
+
+## Original Repository
+https://github.com/jsubroto/billboard-hot-100-web-scraper

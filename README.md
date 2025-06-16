@@ -3,9 +3,9 @@
 
 Python application which web scrapes *[Billboard's Hot 100 Chart](https://www.billboard.com/charts/hot-100)* using **BeautifulSoup**. 
 
-The web scraped song informations are then stored to a `.csv` file named `billboard_hot_100.csv`.
+The web scraped song informations are then stored to a `.csv` file named `data/billboard_hot_100.csv`.
 
-    filename = 'billboard_hot_100.csv'
+    filename = 'data/billboard_hot_100.csv'
 
 ### Generated `.csv` headers:
 * Image URL
@@ -18,7 +18,7 @@ The web scraped song informations are then stored to a `.csv` file named `billbo
 
 
 ### Local HTTP server setup:
-1. Navigate to the directory with the `.csv` file and `.html` file.
+1. Navigate to the directory with the data folder containing `.csv` files and `.html` files.
 
 2. Start a simple local HTTP server:
 ```bash
