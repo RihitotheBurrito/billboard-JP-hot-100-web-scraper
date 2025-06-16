@@ -1,5 +1,5 @@
 # Billboard Hot 100 Web Scraper  
-![Billboard Logo](https://imgur.com/a/MQVdcKI)
+![Billboard Logo](https://i.imgur.com/DohqNsv.jpeg)
 
 📖 **[日本語版README](README_japan.md)** | 🇯🇵 **Japanese Documentation**
 

@@ -1,6 +1,6 @@
 # Billboard Japan Hot 100 Web Scraper 🎵
 
-![Billboard Japan Logo](https://imgur.com/a/MQVdcKI)
+![Billboard Japan Logo](https://i.imgur.com/DohqNsv.jpeg)
 
 **Billboard Japan Hot 100**をスクレイピングして、楽曲チャートデータをCSVファイルに保存するPythonアプリケーションです。
 
