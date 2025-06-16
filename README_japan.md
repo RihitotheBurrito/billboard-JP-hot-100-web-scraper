@@ -1,6 +1,6 @@
 # Billboard Japan Hot 100 Web Scraper 🎵
 
-![Billboard Japan Logo](https://www.billboard-japan.com/common/img/img_header_sitelogo.png)
+![Billboard Japan Logo](https://imgur.com/a/MQVdcKI)
 
 **Billboard Japan Hot 100**をスクレイピングして、楽曲チャートデータをCSVファイルに保存するPythonアプリケーションです。
 
@@ -10,7 +10,6 @@
 - 📅 特定の日付のチャートデータを取得可能
 - 🖼️ アルバムアート画像とランキング変動ステータスの取得
 - 📁 CSV形式でのデータ保存
-- 🌐 美しいHTMLビューアーでチャートを表示
 - 🇯🇵 日本語完全対応
 
 ## 📋 取得データ項目
@@ -45,7 +44,8 @@ python web_scraper_japan.py
 === Billboard Japan Hot 100 スクレイパー ===
 1. 最新のチャートを取得
 2. 特定の日付のチャートを取得
-選択してください (1 または 2):
+3. 期間指定で複数のチャートを取得
+選択してください (1, 2, または 3):
 ```
 
 #### 最新チャートの取得
@@ -63,24 +63,23 @@ python web_scraper_japan.py
 日を入力してください (例: 9): 9
 ```
 
-### 3. データの確認
-
-#### HTMLビューアーで確認
-
-```bash
-# ローカルサーバーを起動
-python -m http.server 8000
-
-# または、キャッシュ無効化サーバーを使用
-python start_server.py
+#### 期間指定で複数取得
+```
+3
+開始年を入力してください (例: 2025): 2025
+開始月を入力してください (例: 1): 1
+終了年を入力してください (例: 2026): 2026
+終了月を入力してください (例: 1): 1
+待機時間（秒、推奨: 2-5秒）: 2
 ```
 
-ブラウザで `http://localhost:8000/index_japan.html` にアクセス
+### 3. データの確認
 
 #### 生成されるファイル
 
-- **最新チャート**: `billboard_japan_hot100.csv`
-- **特定日付**: `billboard_japan_hot100_YYYYMMDD.csv`
+- **最新チャート**: `data/billboard_japan_hot100.csv`
+- **特定日付**: `data/billboard_japan_hot100_YYYYMMDD.csv`
+- **期間指定**: `data/billboard_japan_charts_YYYYMM_YYYYMM/` フォルダに保存
 
 ## 📊 CSVファイル形式
 
@@ -106,12 +105,15 @@ https://www.billboard-japan.com/charts/detail?a=hot100&year=2025&month=06&day=09
 ```
 billboard-hot-100-web-scraper/
 ├── web_scraper_japan.py      # 日本版スクレイパー
-├── index_japan.html          # 日本版HTMLビューアー
-├── start_server.py           # キャッシュ無効化サーバー
 ├── README_japan.md           # 日本版説明書
-└── generated files/
+├── README.md                 # メイン説明書
+├── LICENSE                   # ライセンスファイル
+└── data/                     # データフォルダ
     ├── billboard_japan_hot100.csv
-    └── billboard_japan_hot100_YYYYMMDD.csv
+    ├── billboard_japan_hot100_YYYYMMDD.csv
+    └── billboard_japan_charts_YYYYMM_YYYYMM/
+        ├── billboard_japan_hot100_YYYYMMDD.csv
+        └── combined_charts.csv
 ```
 
 ## 🆚 米国版との違い
@@ -162,7 +164,7 @@ get_japan_billboard_hot100(2025, 6, 9)
    - ネットワーク接続を確認してください
 
 3. **画像が表示されない**
-   - ローカルサーバー経由でHTMLファイルを開いてください
+   - CSVファイルを直接開いて確認してください
    - 画像URLが有効か確認してください
 
 ## 📄 ライセンス
@@ -172,6 +174,10 @@ MIT License - 詳細は [LICENSE](LICENSE) ファイルを参照
 ## 🤝 貢献
 
 プルリクエストやイシューの報告を歓迎します！
+
+## 📖 その他のドキュメント
+
+- **[English README](README.md)** | 🇺🇸 **英語版ドキュメント**
 
 ---
 
