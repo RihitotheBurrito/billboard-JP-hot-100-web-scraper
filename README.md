@@ -1,4 +1,4 @@
-# Billboard Hot 100 Web Scraper  
+# Billboard JAPAN Hot 100 Web Scraper  
 ![Billboard Logo](https://i.imgur.com/DohqNsv.jpeg)
 
 📖 **[日本語版README](README_japan.md)** | 🇯🇵 **Japanese Documentation**
